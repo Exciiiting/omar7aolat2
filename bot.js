@@ -5,7 +5,7 @@ var prefix = "#"
 
 
 client.on('message', function(message) {
-    const myID = "434445470946033665";
+    const myID = "511246372939366430";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "sn")) {
                 if(message.author.id !== myID) return;
