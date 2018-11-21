@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const client = new Discord.Client();
-var prefix = "#"
+var prefix = "-"
 
 
 
@@ -52,8 +52,8 @@ client.on('message', function(message) {
         client.user.setAvatar(args);
         message.channel.send(':white_check_mark: Done!').then(msg => {
                 if(!args) return message.reply('اكتب الحالة اللي تريدها.');
-           msg.delete(5000);
-          message.delete(5000);
+           msg.delete(1000);
+          message.delete(1000);
         });
     }
 });
